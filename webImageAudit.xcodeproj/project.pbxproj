@@ -14,6 +14,13 @@
 		C91163A02BCA1A1F0004401C /* webImageAuditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C911639F2BCA1A1F0004401C /* webImageAuditTests.swift */; };
 		C91163AA2BCA1A1F0004401C /* webImageAuditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91163A92BCA1A1F0004401C /* webImageAuditUITests.swift */; };
 		C91163AC2BCA1A1F0004401C /* webImageAuditUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91163AB2BCA1A1F0004401C /* webImageAuditUITestsLaunchTests.swift */; };
+		C91163B92BCA1C580004401C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91163B82BCA1C580004401C /* AppDelegate.swift */; };
+		C91163BC2BCA1DAD0004401C /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C91163BB2BCA1DAD0004401C /* SDWebImage */; };
+		C91163BE2BCA1DAD0004401C /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C91163BD2BCA1DAD0004401C /* SDWebImageMapKit */; };
+		C91163C12BCA1DDA0004401C /* SDWebImageWebPCoder in Frameworks */ = {isa = PBXBuildFile; productRef = C91163C02BCA1DDA0004401C /* SDWebImageWebPCoder */; };
+		C91163C42BCA1E230004401C /* UpdateWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C91163C22BCA1E230004401C /* UpdateWindowController.xib */; };
+		C91163C52BCA1E230004401C /* UpdateWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91163C32BCA1E230004401C /* UpdateWindowController.swift */; };
+		C91163CB2BCA7F900004401C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C91163CA2BCA7F900004401C /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,10 @@
 		C91163A52BCA1A1F0004401C /* webImageAuditUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = webImageAuditUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91163A92BCA1A1F0004401C /* webImageAuditUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webImageAuditUITests.swift; sourceTree = "<group>"; };
 		C91163AB2BCA1A1F0004401C /* webImageAuditUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webImageAuditUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C91163B82BCA1C580004401C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C91163C22BCA1E230004401C /* UpdateWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UpdateWindowController.xib; sourceTree = "<group>"; };
+		C91163C32BCA1E230004401C /* UpdateWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateWindowController.swift; sourceTree = "<group>"; };
+		C91163CA2BCA7F900004401C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C91163BE2BCA1DAD0004401C /* SDWebImageMapKit in Frameworks */,
+				C91163BC2BCA1DAD0004401C /* SDWebImage in Frameworks */,
+				C91163C12BCA1DDA0004401C /* SDWebImageWebPCoder in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +109,15 @@
 		C911638C2BCA1A1E0004401C /* webImageAudit */ = {
 			isa = PBXGroup;
 			children = (
+				C91163C32BCA1E230004401C /* UpdateWindowController.swift */,
+				C91163C22BCA1E230004401C /* UpdateWindowController.xib */,
+				C91163B82BCA1C580004401C /* AppDelegate.swift */,
 				C911638D2BCA1A1E0004401C /* webImageAuditApp.swift */,
 				C911638F2BCA1A1E0004401C /* ContentView.swift */,
 				C91163912BCA1A1F0004401C /* Assets.xcassets */,
 				C91163962BCA1A1F0004401C /* webImageAudit.entitlements */,
 				C91163932BCA1A1F0004401C /* Preview Content */,
+				C91163CA2BCA7F900004401C /* .gitignore */,
 			);
 			path = webImageAudit;
 			sourceTree = "<group>";
@@ -145,6 +163,11 @@
 			dependencies = (
 			);
 			name = webImageAudit;
+			packageProductDependencies = (
+				C91163BB2BCA1DAD0004401C /* SDWebImage */,
+				C91163BD2BCA1DAD0004401C /* SDWebImageMapKit */,
+				C91163C02BCA1DDA0004401C /* SDWebImageWebPCoder */,
+			);
 			productName = webImageAudit;
 			productReference = C911638A2BCA1A1E0004401C /* webImageAudit.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +240,10 @@
 				Base,
 			);
 			mainGroup = C91163812BCA1A1E0004401C;
+			packageReferences = (
+				C91163BA2BCA1D690004401C /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				C91163BF2BCA1DDA0004401C /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */,
+			);
 			productRefGroup = C911638B2BCA1A1E0004401C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +260,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C91163CB2BCA7F900004401C /* .gitignore in Resources */,
+				C91163C42BCA1E230004401C /* UpdateWindowController.xib in Resources */,
 				C91163952BCA1A1F0004401C /* Preview Assets.xcassets in Resources */,
 				C91163922BCA1A1F0004401C /* Assets.xcassets in Resources */,
 			);
@@ -259,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C91163B92BCA1C580004401C /* AppDelegate.swift in Sources */,
 				C91163902BCA1A1E0004401C /* ContentView.swift in Sources */,
+				C91163C52BCA1E230004401C /* UpdateWindowController.swift in Sources */,
 				C911638E2BCA1A1E0004401C /* webImageAuditApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +460,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Web Image Audit";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,6 +488,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Web Image Audit";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -581,6 +614,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C91163BA2BCA1D690004401C /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.1;
+			};
+		};
+		C91163BF2BCA1DDA0004401C /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageWebPCoder";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C91163BB2BCA1DAD0004401C /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C91163BA2BCA1D690004401C /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		C91163BD2BCA1DAD0004401C /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C91163BA2BCA1D690004401C /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+		C91163C02BCA1DDA0004401C /* SDWebImageWebPCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C91163BF2BCA1DDA0004401C /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */;
+			productName = SDWebImageWebPCoder;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C91163822BCA1A1E0004401C /* Project object */;
 }
